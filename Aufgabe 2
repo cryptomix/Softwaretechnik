@@ -1,0 +1,17 @@
+ /*******************************************************
+* Autor: [Oskar ]
+* Erstellt: [04/18]
+* Versuch: [1]
+* Aufgabe: [Kommentar]
+*******************************************************/
+ 
+ 
+ #include <stdio.h>
+ 
+ int main ()
+ {
+ 
+ printf("Hello Hochschule Duesseldorf/n");
+ 
+ return 0;
+ }
