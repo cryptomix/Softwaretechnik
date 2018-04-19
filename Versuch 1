@@ -1,4 +1,5 @@
-include <stdio.h> 
+
+#include <stdio.h> 
 int main()
 {
 int speicher;  
@@ -6,7 +7,8 @@ int speicher;
  
 printf("\n\n Das ist der erste Praktikumsversuch in Softwaretechnik!\n");
 printf("Geben Sie eine Zahl ein:");
-scanf( "%d" ,speicher); /**Einlesen eines Integer Wertes**/
+scanf( "%d" ,&speicher); /**Einlesen eines Integer Wertes**/
 
-return;
+return 0;
 }
+
