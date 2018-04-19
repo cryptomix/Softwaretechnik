@@ -1,0 +1,12 @@
+include <stdio.h> 
+int main()
+{
+int speicher;  
+/** Ausgabe **/  
+ 
+printf("\n\n Das ist der erste Praktikumsversuch in Softwaretechnik!\n");
+printf("Geben Sie eine Zahl ein:");
+scanf( "%d" ,speicher); /**Einlesen eines Integer Wertes**/
+
+return;
+}
