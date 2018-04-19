@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+
+int zahl;
+
+scanf( "%d" ,zahl)
+printf("Eine short integer benoetigt 2 Bytes/n");
+
+return 0;
+}
