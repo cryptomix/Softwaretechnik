@@ -13,12 +13,12 @@ int main()
   printf("Das unsortierte Array:\n");
   
   for(i=0; i<SIZE; i++)
-    printf("i\t", zahlen[i]);
+    printf("d\t", zahlen[i]);
     
   printf("Das sortierte Array:\n");
   
   for(i=0; i<SIZE; i++)
-      printf("i\t", zahlen[i]);
+      printf("d\t", zahlen[i]);
   return 0;
   
 }
