@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*Arraygroesse*/
-const int SITE=10;
+const int SIZE=10;
 
 void sort(int*array, int size);
 
