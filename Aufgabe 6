@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+
+int zahl, links, rechts, negativ
+
+printf("Geben Sie eine Zahl ein:\n");
+scanf("%d", &zahl);
+
+links = zahl << 2; /*links shift*/
+printf("Zahl wurde 2 nach links geshiftet: %d \n", links);
+
+rechts = zahl >> 2; /*rechts shift*/
+printf("Zahl wurde 2 nach rechts geshiftet: %d \n", rechts);
+
+negativ = ~zahl;
+printf("Negierte Zahl: %d \n", negativ);
+
+return 0;
+}
