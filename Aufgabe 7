@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <math.h>
+
+main()
+{
+float a;
+float b;
+float c;
+float d;
+float x1;
+float x2;
+
+printf("Geben Sie a ein:\n");
+scanf("%f", &a);
+
+printf("Geben Sie b ein:\n");
+scanf("%f", &b);
+
+
+printf("Geben Sie c ein:\n");
+scanf("%f", &c);
+
+d = sqrt((b*b)-(4*a*c));
+
+if (d >= 0)
+    {
+    x1 = ((-b + d)/2*a);
+    x2 = ((-b - d)/2*a);
+    printf("\n\n x1 = %f, x2 = %f", x1, x2);
+    }
+else
+    {
+    printf("Es konnte keine Loesung ausgegeben werden\n");
+    }
+}
