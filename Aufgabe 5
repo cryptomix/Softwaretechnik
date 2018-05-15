@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+int a;
+int b;
+int d;
+int d;
+int e;
+int f;
+
+printf("Geben Sie eine Zahl ein:\n");
+scanf("%d", &a);
+
+printf("Geben Sie eine weitere Zahl ein:\n");
+scanf("%d", &b);
+
+d = a&b;
+e = a|b;
+f = a^b;
+
+printf("AND ist %d, OR ist %d, XOR ist %d \n", d, e, f);
+}
