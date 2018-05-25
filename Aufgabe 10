@@ -25,20 +25,20 @@ do
 
         case 'A':
 
-                        printf("hier kommt aufgabe 1 rein");
+                        printf("Es wurde A ausgewaehlt");
                         break;
 
 
 
         case 'B':
 
-                        printf("hier kommt aufgabe 2 rein");
+                        printf("Es wurde B ausgewaehlt");
                         break;
 
 
         case 'C':
 
-                        printf("hier kommt aufgabe 3 rein");
+                        printf("Es wurde B ausgewaehlt");
                         break;
 
         }
