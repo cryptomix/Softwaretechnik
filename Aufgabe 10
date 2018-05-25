@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <ctype.h>
+
+
+int main()
+{
+ 
+char wahl;
+
+do
+    {
+
+        printf("A.  Parameter eingeben\n");
+        printf("B.  Flaecheninhalt und Winkel berechnen\n");
+        printf("C.  Programm beenden\n");
+        printf("Ihre Wahl:");
+        scanf("%c", &wahl);
+
+        wahl = toupper(wahl);
+    } while(!(wahl =='A' || wahl=='B' || wahl=='C'));
+
+
+        switch(wahl)
+        {
+
+        case 'A':
+
+                        printf("hier kommt aufgabe 1 rein");
+                        break;
+
+
+
+        case 'B':
+
+                        printf("hier kommt aufgabe 2 rein");
+                        break;
+
+
+        case 'C':
+
+                        printf("hier kommt aufgabe 3 rein");
+                        break;
+
+        }
+}
+ 
+
