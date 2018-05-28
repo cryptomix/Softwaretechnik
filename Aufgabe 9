@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <math.h>
+
+#define PI 3.14159265
+#define MAX 50
+
+int main()
+{
+
+int wahl, n;
+float alpha, a, n, A;
+float i,  parameter[sizeA];
+
+do
+    {
+
+        printf("A.  Parameter eingeben\n");
+        printf("B.  Flaecheninhalt und Winkel berechnen\n");
+        printf("C.  Programm beenden\n");
+        printf("Ihre Wahl:");
+        scanf("%d", &wahl);
+
+
+
+
+
+        switch(wahl)
+        {
+
+        case 1: 
+
+                        printf("Geben Sie die Anzahl der Ecken an: \n");
+                        scanf("%d", &n);
+                        printf("Geben Sie die Kantenlaenge ein: \n");
+
+                        for( i = 0; i < n ; i = i + 1 )
+                        {
+                                scanf("%f", &a[i]);
+                        }
+
+                        break;
+                         
