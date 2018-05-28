@@ -45,3 +45,46 @@ do
 }
  
 
+
+
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+char ch;
+int cho;
+clrscr();
+do
+{
+clrscr();
+printf("\n *** MAIN MENU *** ");
+printf("\n 1 - Option 1 ");
+printf("\n 2 - Option 2 ");
+printf("\n 3 - Option 3 ");
+printf("\n 4 - Exit ");
+printf("\n Enter your choice : ");
+scanf("%d",&cho);
+switch(cho)
+{
+case 1:
+printf("\n You have selected option 1 ");
+break;
+case 2:
+printf("\n You have selected option 2 ");
+break;
+case 3:
+printf("\n You have selected option 3 ");
+break;
+case 4:
+exit(0);
+default:
+printf("\n Invalid option ! ");
+}
+printf("\n\n Do you want to continue ? Y - Yes  /  N - No \n");
+ch=getch();
+}while (ch=='Y' || ch==	'y');
+printf("\n Thank you .. ! ");
+getch();
+return 0;
+}
