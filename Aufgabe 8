@@ -24,7 +24,6 @@ do
         printf("Ihre Wahl:");
         scanf("%d", &wahl);
 
-        wahl = toupper(wahl);
 
 
 
