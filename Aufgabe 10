@@ -88,3 +88,24 @@ printf("\n Thank you .. ! ");
 getch();
 return 0;
 }
+
+
+#include <math.h>
+#define PI 3.14159265
+
+
+float alpha, a, n, A;
+
+//Winkel
+
+alpha == ((n - 2)/n)*180;
+
+
+//Flaecheninhalt
+
+A == (n*a^2)/(4 * tan(PI / n));
+
+
+
+
+
