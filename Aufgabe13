@@ -59,12 +59,17 @@ berechnen(int a, int b)
   steine[a+1][1]=x;
   }
   
-  else
+  else if
   {
   berechnen(a, b+1);
   }
+  
+  else
+  {
+  printf("FEHLER: Es konnten keine passenden Steine gefunden werden!\n");
+  return 0;
+  }
 }
-
 anzeigen()
 {
 printf("1. Stein (%d / %d)", steine[0][0], steine[1][0]);
