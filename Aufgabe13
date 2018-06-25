@@ -1,0 +1,35 @@
+#include <stdio.h>
+#define MAX 6
+
+int steine[MAX][2]
+
+int main()
+{
+  eingeben();
+  int i;
+  for(i=0; i<(MAX-1); i++)
+    {
+    berechnen(i,j);
+    }
+  anzeigen();
+  speichern();
+}
+
+write()
+{
+printf("Geben Sie die Steine ein:\n");
+int i;
+  for(i=0; i<MAX; i++)
+  {
+  printf("1. Seite Stein %d", i+1);
+  scanf("%d", &steine[i][0]);
+  printf("2. Seite Stein %d", i+1);
+  scanf("%d", &steine[i][1]);
+  }
+  for(i=0; i<MAX, i++)
+  {
+  printf("Stein %d : \t(%d / %d)\n", i+1, steine[i][0], steine[i][1]);
+  }
+  
+}
+
