@@ -1,96 +1,97 @@
 #include <stdio.h>
-#define MAX 10
+#define MAX 4
 
-int steine[MAX][2]
+int steine[MAX][2];
 
-int main()
-{
-  eingeben();
-  int i;
-  for(i=0; i<(MAX-1); i++)
-    {
-    berechnen(a,b);
-    }
-  anzeigen();
-  speichern();
-}
-
-eingeben()
+void eingeben()
 {
 printf("Geben Sie die Steine ein:\n");
 int i;
   for(i=0; i<MAX; i++)
   {
-  printf("1. Seite Stein %d", i+1);
+  printf("1. Seite Stein %d:\t", i+1);
   scanf("%d", &steine[i][0]);
-  printf("2. Seite Stein %d", i+1);
+  printf("2. Seite Stein %d: \t", i+1);
   scanf("%d", &steine[i][1]);
   }
-  for(i=0; i<MAX, i++)
+  for(i=0; i<MAX; i++)
   {
   printf("Stein %d : \t(%d / %d)\n", i+1, steine[i][0], steine[i][1]);
   }
   
 }
 
-berechnen(int a, int b)
-{
-  if(steine[a][1] == steine[b][0])
-  {
-  int x, y;
-    x=steine[b][0];
-    y=steine[b][1];
-  steine[b][0]=steine[a+1][0];
-  steine[b][1]=steine[a+1][1];
-  
-  steine[a+1][0]=x;
-  steine[a+1][1]=y;
-  }
-  
-  else if(steine[a][1] == steine[b][1])
-  {
-  int x, y;
-    x=steine[b][0];
-    y=steine[b][1];
-  steine[b][0]=steine[a+1][0];
-  steine[b][1]=steine[a+1][1];
-  
-  steine[a+1][0]=y;
-  steine[a+1][1]=x;
-  }
-  
-  else if
-  {
-  berechnen(a, b+1);
-  }
-  
-  else
-  {
-  printf("FEHLER: Es konnten keine passenden Steine gefunden werden!\n");
-  return 0;
-  }
+void berechnen(int a, int b)
+{if(b<MAX)
+	{
+	  if(steine[a][1] == steine[b][0])
+	  {
+	  int x, y;
+	    x=steine[b][0];
+	    y=steine[b][1];
+	  steine[b][0]=steine[a+1][0];
+	  steine[b][1]=steine[a+1][1];
+	  
+	  steine[a+1][0]=x;
+	  steine[a+1][1]=y;
+	  }
+	  
+	  else if(steine[a][1] == steine[b][1])
+	  {
+	  int x, y;
+	    x=steine[b][0];
+	    y=steine[b][1];
+	  steine[b][0]=steine[a+1][0];
+	  steine[b][1]=steine[a+1][1];
+	  
+	  steine[a+1][0]=y;
+	  steine[a+1][1]=x;
+	  }
+	  
+	  else
+	  {
+	  berechnen(a, b+1);
+	  }
+	  
+	  
+	 }
 }
-anzeigen()
+
+void anzeigen()
 {
-printf("1. Stein (%d / %d)", steine[0][0], steine[1][0]);
+printf("\n\n\nStein 1 : \t(%d / %d)\n", steine[0][0], steine[1][0]);
 int i=0;
 while(steine[i][1] == steine[i+1][0] && i<MAX)
   {
-  printf("Stein %d : \t(%d / %d)\n", i+1, steine[i][0], steine[i][1]);
+  printf("Stein %d : \t(%d / %d)\n", i+2, steine[i+1][0], steine[i+1][1]);
   i++;
   }
 }
 
-speichern()
+void speichern()
 {
 FILE *fp;
 fp = fopen("Domino.txt","w");
-fprintf(fp, "1. Stein (%d / %d)", steine[0][0], steine[1][0]);
+fprintf(fp, "Stein 1 : \t(%d / %d)\n", steine[0][0], steine[1][0]);
 int i=0;
 while(steine[i][1] == steine[i+1][0] && i<MAX)
   {
-  fprintf(fp, "Stein %d : \t(%d / %d)\n", i+1, steine[i][0], steine[i][1]);
+  fprintf(fp, "Stein %d : \t(%d / %d)\n", i+2, steine[i+1][0], steine[i+1][1]);
   i++;
   }
-fclose();
+fclose(fp);
 }
+
+
+int main()
+{
+ eingeben();
+  int i;
+  for(i=0; i<(MAX-1); i++)
+    {  
+    berechnen(i, i+1);
+    }
+  anzeigen();
+  speichern();
+} 
+
