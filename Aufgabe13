@@ -1,15 +1,32 @@
+#include <stdio.h>
+#define MAX 10
+
+int steine[MAX][2];
+
+int main()
+{
+  eingeben();
+  int i;
+  for(i=0; i<(MAX-1); i++)
+    {
+    berechnen();
+    }
+  anzeigen();
+  speichern();
+}
+
 eingeben()
 {
 printf("Geben Sie die Steine ein:\n");
 int i;
   for(i=0; i<MAX; i++)
   {
-  printf("1. Seite Stein %d", i+1);
+  printf("1. Seite Stein %d:\t", i+1);
   scanf("%d", &steine[i][0]);
-  printf("2. Seite Stein %d", i+1);
+  printf("2. Seite Stein %d: \t", i+1);
   scanf("%d", &steine[i][1]);
   }
-  for(i=0; i<MAX, i++)
+  for(i=0; i<MAX; i++)
   {
   printf("Stein %d : \t(%d / %d)\n", i+1, steine[i][0], steine[i][1]);
   }
@@ -42,16 +59,12 @@ berechnen(int a, int b)
   steine[a+1][1]=x;
   }
   
-  else if
+  else
   {
   berechnen(a, b+1);
   }
   
-  else
-  {
-  printf("FEHLER: Es konnten keine passenden Steine gefunden werden!\n");
-  return 0;
-  }
+  
 }
 anzeigen()
 {
@@ -75,5 +88,5 @@ while(steine[i][1] == steine[i+1][0] && i<MAX)
   fprintf(fp, "Stein %d : \t(%d / %d)\n", i+1, steine[i][0], steine[i][1]);
   i++;
   }
-fclose();
+fclose(fp);
 }
