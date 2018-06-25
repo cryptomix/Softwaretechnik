@@ -15,7 +15,7 @@ int main()
   speichern();
 }
 
-write()
+eingeben()
 {
 printf("Geben Sie die Steine ein:\n");
 int i;
