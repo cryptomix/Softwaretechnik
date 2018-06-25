@@ -7,6 +7,7 @@ int main()
 {
   eingeben();
   int i;
+  int j;
   for(i=0; i<(MAX-1); i++)
     {
     berechnen(i,j);
