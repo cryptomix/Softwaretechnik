@@ -1,20 +1,3 @@
-#include <stdio.h>
-#define MAX 10
-
-int steine[MAX][2]
-
-int main()
-{
-  eingeben();
-  int i;
-  for(i=0; i<(MAX-1); i++)
-    {
-    berechnen(a,b);
-    }
-  anzeigen();
-  speichern();
-}
-
 eingeben()
 {
 printf("Geben Sie die Steine ein:\n");
