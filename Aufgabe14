@@ -25,6 +25,7 @@ int main()
 	int i,x; char dt[11]; char note[100]; char io; float val;
 	for(i=0;i<100;i++)printf("=");
 	printf("Wilkommen zum Haushaltsbuch");
+	printf("%d",eq("saas","saas"));
 	do
 	{
 		for(i=0;i<100;i++)printf("=");
